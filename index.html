@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/require.js/2.3.5/require.js"></script>
+    <script>
+        require.config({
+            baseUrl:    'script/',
+            paths:      {
+                Vue:             'https://cdn.bootcss.com/vue/2.5.3/vue',
+                'Vue-Router':    'https://cdn.bootcss.com/vue-router/3.0.1/vue-router',
+                VueX:            'https://cdn.bootcss.com/vuex/3.0.1/vuex',
+                ELEMENT:         'https://cdn.bootcss.com/element-ui/2.0.4/index'
+            },
+            urlArgs:    'version=201711221321',
+            shim:       {
+                BootStrap:   ['jquery']
+            }
+        });
+
+        require(['index']);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

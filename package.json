@@ -1,0 +1,26 @@
+{
+  "name": "watersong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "docdash": "^0.4.0",
+    "express": "^4.16.2",
+    "html-pages": "^2.0.5",
+    "husky": "^0.14.3",
+    "jsdoc": "^3.5.5",
+    "jsdoctest": "^1.7.1",
+    "mocha": "^4.0.1",
+    "r.js": "^1.0.3",
+    "reduce-blank": "^0.2.0",
+    "requirejs": "^2.3.5"
+  },
+  "scripts": {
+    "document": "jsdoc && reduce-blank",
+    "build": "r xxxx && npm run document",
+    "test": "npm run jsdoctest",
+    "jsdoctest": "mocha --require jsdoctest `find lib src source -name \"*.js\"`"
+  },
+  "author": "",
+  "license": "ISC"
+}
